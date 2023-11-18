@@ -15,7 +15,7 @@ jobs:
        sudo apt-get update
        sudo apt-get install \
          libxi-dev libxrandr-dev \
-         ccache asciidoc liblablgl-ocaml-dev libgumbo-dev libharfbuzz-dev libjpeg-dev libopenjp2-7-dev
+         ccache asciidoc liblablgl-ocaml-dev libgumbo-dev libharfbuzz-dev libjpeg-dev libopenjp2-7-dev libjbig2dec0-dev
     - name: download mupdf
       run: |
         mkdir build
