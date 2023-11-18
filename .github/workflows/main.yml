@@ -15,7 +15,9 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: '0'
     - name: download mupdf
       run: mkdir build && sh misc/getmupdf.sh build/mupdf
     - name: Install prerquisites
