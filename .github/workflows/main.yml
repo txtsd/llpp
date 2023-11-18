@@ -18,6 +18,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: '0'
+    - name: download mupdf
+      run: mkdir build && sh misc/getmupdf.sh build/mupdf
     - name: Install prerquisites
       if: matrix.os == 'ubuntu-latest'
       run: |
