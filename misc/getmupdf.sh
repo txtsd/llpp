@@ -9,6 +9,6 @@ if [ ! -d ${MUPDF_OUTPUT_DIR} ]; then
     echo "mupdf does not exist, fetching it from ${MUPDF_URL}"
     git clone ${cloneargs-} ${MUPDF_URL} ${MUPDF_OUTPUT_DIR}
     cd ${MUPDF_OUTPUT_DIR}
-    git submodule update --init --recursive --jobs 0
+    git submodule update --init --recursive --jobs 8
 fi
 
