@@ -23,7 +23,7 @@ jobs:
     - name: Build mupdf
       run: |
         cd build/mupdf
-        make shared=yes build=release
+        make shared=no build=release
         sudo make prefix=/usr install
     - name: build llpp
       run: bash ahbs
