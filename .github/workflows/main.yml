@@ -22,7 +22,7 @@ jobs:
       if: matrix.os == 'ubuntu-latest'
       run: |
        sudo apt-get update
-       sudo apt-get install libgl1-mesa-dev ccache asciidoc liblablgl-ocaml-dev
+       sudo apt-get install ccache asciidoc liblablgl-ocaml-dev libmupdf-dev libgumbo-dev libharfbuzz-dev libjpeg-dev libopenjp2-7-dev
     - name: build
       if: matrix.os == 'ubuntu-latest'
       run: bash ahbs
